@@ -219,9 +219,10 @@ footer{
   .formulario{
     height: auto;
   }
-  .menu, .main, .right,.formulario{
+  .menu, .main, .right,.formulario, .inscritos{
     width:100%;
   }
+
   h1{
     font-size: larger;
   }
@@ -234,6 +235,10 @@ footer{
   li a{
     font-size: medium;
   }  
+
+  input, select, textarea {
+    font-size: 1.5vw;  
+  }
   .col-25, .col-75, input[type=submit] {
     width: 100%;
     margin-top: 0;
