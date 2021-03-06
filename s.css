@@ -40,13 +40,12 @@ p{
   color: var(--blanco);
   padding:15px;
   text-align:center;
-  background-image: linear-gradient(to right,blue 0%,red 100%),url("https://glasgowlife.sportsuite.co.uk/images/files/75856/1280x720.jpg");
+  background-image: linear-gradient(to right,rgb(0, 17, 255) 0%,red 100%),url("https://glasgowlife.sportsuite.co.uk/images/files/75856/1280x720.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
-  background-blend-mode: lighten;
-    
+  background-blend-mode: lighten;    
 }
 
 /*Relacionado con el nav bar*/
@@ -219,11 +218,12 @@ footer{
     color: #ececec;
     padding:15px;
     text-align:center;
-    background-image: url("https://pbs.twimg.com/media/EvLOAqDXEAE8-ji?format=jpg&name=large");
+    background-image:  linear-gradient(to right,blue 0%,red 100%),url("https://pbs.twimg.com/media/EvLOAqDXEAE8-ji?format=jpg&name=large");
     background-position: center bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;  
+    background-blend-mode: lighten;
   }
   .column {
     flex: 50%;
@@ -236,11 +236,12 @@ footer{
     color: #ececec;
     padding:15px;
     text-align:center;
-    background-image: url("https://worldarchery.sport/sites/default/files/news/images/main/d19_5775-x4.jpg");
+    background-image:  linear-gradient(to right,blue 0%,red 100%), url("https://worldarchery.sport/sites/default/files/news/images/main/d19_5775-x4.jpg");
     background-position: center bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;  
+    background-size: cover;
+    background-blend-mode: lighten;   
   }
   .formulario{
     height: auto;
@@ -250,16 +251,16 @@ footer{
   }
 
   h1{
-    font-size: larger;
+    font-size: 10vw;
   }
   h2{
-    font-size: medium;
+    font-size: 3vw;
   }
   p{
-    font-size: small;
+    font-size: 2vw;
   }
   li a{
-    font-size: medium;
+    font-size: 3VW;
   }  
 
   input, select, textarea, label {
