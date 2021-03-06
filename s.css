@@ -1,15 +1,26 @@
+:root{
+  --negro: #0A1717;
+  --gris: #444444;
+  --azul: #0B3D7D;
+  --azulc: #7599C7;
+  --azulfondo: #C9DCF5;
+  --plata: #9CA0A1;
+  --blanco: #dfe7f0;
+}
+
 /*Relacionado con todo el documento HTML*/
+
 * {
   box-sizing: border-box;
 }
 
 body{
   font-family:Verdana;
-  color: rgb(49, 49, 49);
+  color: var(--negro);
 }
 
 h1{
-  font-size: 3vw;
+  font-size: 4vw;
 }
 
 h2{
@@ -17,15 +28,14 @@ h2{
 }
 
 p{
-  font-size: 1vw;
+  font-size: 1.5vw;
   line-height: 150%;
-  text-align: justify;
   text-justify: auto;
 }
 
 /*Relacionado con la cabecera*/
 .cabecera {
-  color: #ececec;
+  color: var(--blanco);
   padding:15px;
   text-align:center;
   background-image: url("https://glasgowlife.sportsuite.co.uk/images/files/75856/1280x720.jpg");
@@ -41,7 +51,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: auto;
-  background-color: rgb(68, 68, 68);
+  background-color: var(--gris);
   position: relative;
   top: 0;
   width: 100%;
@@ -51,32 +61,33 @@ li {
 }
 li a {
   display: block;
-  color: white;
+  color: var(--blanco);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 1vw;
+  font-size: 1.5vw;
 }
 
 /*Esto de aqui puede parecer un poco raro pero no ha sido copiado y pegado porque si, 
 entiendo su funcionamiento, a todo los a dentro de un li que haya excepto al que tenga clase active se le aplica el estilo*/
 li a:hover:not(.active) {
-  background-color: #3a76f8;
+  background-color: var(--azul);
 }
 .active {
-  background-color: #296af8;
+  background-color: var(--azul);
 }
 
 /*Formato del main*/
 .main {
   float:left;
   width:70%;
-  padding:0 20px;
+  padding:0 30px;
+  padding-right: 10%;
 }
 
 /*Formato del aside*/
 .right {
-  background-color:#c8c8c89d;
+  background-color:var(--azulfondo);
   float:left;
   width:30%;
   padding:15px;
@@ -90,24 +101,30 @@ y he creado un par de clases que definen a las label que ocupen un 25% y al inpu
 
 .formulario {
   width: 40%;
+  height: 100%;
   float:left;
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: var(--azulfondo);
   padding: 20px;
-  
+  height: 100vh;
 }
+
+input, select, textarea {
+  font-size: 1.5vw;  
+}
+
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--azulc);
   border-radius: 4px;
-  resize: vertical;
+  resize: vertical;  
 }
 
 input[type=number], select, textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--azulc);
   border-radius: 4px;
   resize: vertical;
 }
@@ -115,11 +132,11 @@ input[type=number], select, textarea {
 label {
   padding: 12px 12px 12px 0;
   display: inline-block;
-  font-size: 1vw;
+  font-size: 1.5vw;
 }
 
 input[type=submit] {
-  background-color: #296af8;
+  background-color: var(--azulc);
   color: white;
   padding: 12px 20px;
   border: none;
@@ -129,7 +146,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #3a76f8;
+  background-color: var(--azul);
 }
 
 .col-25 {
@@ -160,10 +177,16 @@ input[type=submit]:hover {
 }
 
 footer{
-  background-color:#c8c8c89d;
+  background-color:var(--blanco);
   text-align:center;
   padding:10px;
-  margin-top:7px;
+  margin-top: auto;  
+  width: 100%;
+  bottom: 0;
+  font-size: 0.8vw;  
+  clear: both;
+  position: relative;
+  height: 100%;  
 }
 
 
@@ -193,7 +216,9 @@ footer{
     background-attachment: fixed;
     background-size: cover;  
   }
-  /* For mobile phones: */
+  .formulario{
+    height: auto;
+  }
   .menu, .main, .right,.formulario{
     width:100%;
   }
