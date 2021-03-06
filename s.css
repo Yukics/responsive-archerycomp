@@ -20,7 +20,8 @@ body{
 }
 
 h1{
-  font-size: 4vw; 
+  font-size: 4vw;
+   
 }
 
 
@@ -39,11 +40,13 @@ p{
   color: var(--blanco);
   padding:15px;
   text-align:center;
-  background-image: url("https://glasgowlife.sportsuite.co.uk/images/files/75856/1280x720.jpg");
+  background-image: linear-gradient(to right,blue 0%,red 100%),url("https://glasgowlife.sportsuite.co.uk/images/files/75856/1280x720.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100% 100%; 
+  background-size: 100% 100%;
+  background-blend-mode: lighten;
+    
 }
 
 /*Relacionado con el nav bar*/
