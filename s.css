@@ -254,13 +254,13 @@ footer{
     font-size: 10vw;
   }
   h2{
-    font-size: 3vw;
+    font-size: 6vw;
   }
   p{
-    font-size: 2vw;
+    font-size: 4vw;
   }
   li a{
-    font-size: 3VW;
+    font-size: 6VW;
   }  
 
   input, select, textarea, label {
