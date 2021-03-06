@@ -67,7 +67,6 @@ li a {
   text-decoration: none;
   font-size: 1.5vw;
 }
-
 /*Esto de aqui puede parecer un poco raro pero no ha sido copiado y pegado porque si, 
 entiendo su funcionamiento, a todo los a dentro de un li que haya excepto al que tenga clase active se le aplica el estilo*/
 li a:hover:not(.active) {
@@ -189,6 +188,25 @@ footer{
   height: 100%;  
 }
 
+/*Este es el css relativo al album de imagenes*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
 
 /*Este apartado aporta el responsive, cambia determinadas caracteristicas del css dependiendo del tamaño de la pantalla*/
 @media only screen and (max-width:1000px) {/*Tablet*/
@@ -202,7 +220,10 @@ footer{
     background-attachment: fixed;
     background-size: cover;  
   }
- 
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
 }
 
 @media only screen and (max-width:640px) {/*Movil*/
@@ -242,5 +263,12 @@ footer{
   .col-25, .col-75, input[type=submit] {
     width: 100%;
     margin-top: 0;
+  }
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  footer{
+    font-size: 2vw;
   }
 }
