@@ -20,8 +20,9 @@ body{
 }
 
 h1{
-  font-size: 4vw;
+  font-size: 4vw; 
 }
+
 
 h2{
   font-size: 2vw;
@@ -42,7 +43,7 @@ p{
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100% 100%;  
+  background-size: 100% 100%; 
 }
 
 /*Relacionado con el nav bar*/
@@ -63,7 +64,7 @@ li a {
   display: block;
   color: var(--blanco);
   text-align: center;
-  padding: 14px 16px;
+  padding: 20px 20px;
   text-decoration: none;
   font-size: 1.5vw;
 }
@@ -169,10 +170,11 @@ input[type=submit]:hover {
 
 .inscritos {
   float:left;
-  width:30%;
+  width:auto;
+  max-width: 60%;
   padding:15px;
   margin-top:7px;
-  text-align:center;
+  text-align:left;
 }
 
 footer{
@@ -214,7 +216,7 @@ footer{
     color: #ececec;
     padding:15px;
     text-align:center;
-    background-image: url("https://worldarchery.sport/sites/default/files/news/images/main/d19_5775-x4.jpg");
+    background-image: url("https://pbs.twimg.com/media/EvLOAqDXEAE8-ji?format=jpg&name=large");
     background-position: center bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
