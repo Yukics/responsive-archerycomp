@@ -282,7 +282,7 @@ practicamente lo unico que se toca son los width y el tamano de la fuente*/
     background-position: center bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: auto;  
+    background-size: 100%;  
     background-blend-mode: lighten;
   }
   .column {
@@ -320,7 +320,7 @@ practicamente lo unico que se toca son los width y el tamano de la fuente*/
     background-position: center bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: auto;
+    background-size: 100%;
     background-blend-mode: lighten;   
   }
   .formulario{
