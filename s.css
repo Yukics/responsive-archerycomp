@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 :root{
   --negro: #0A1717;
   --gris: #444444;
@@ -15,7 +16,7 @@
 }
 
 body{
-  font-family:Verdana;
+  font-family:'Open Sans', sans-serif;
   color: var(--negro);
 }
 
@@ -197,7 +198,7 @@ button:hover{
 
 .inscritos {
   float:left;
-  width:auto;
+  width:100%;
   max-width: 60%;
   padding:15px;
   margin-top:7px;
@@ -241,8 +242,35 @@ footer{
   width: 100%;
 }
 
+table{
+  font-size: 1.5vw;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: var(--blanco);}
+
+tr:hover {background-color: #ddd;}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: var(--azulc);
+  color: white;
+}
+
+.buttons{
+  margin: auto;
+  display: inline;
+}
+
+
 /*Este apartado aporta el responsive, cambia determinadas caracteristicas del css dependiendo del tamaño de la pantalla*/
-@media only screen and (max-width:1000px) {/*Tablet*/
+@media only screen and (max-width:800px) {/*Tablet*/
   .cabecera {
     color: #ececec;
     padding:15px;
@@ -257,6 +285,11 @@ footer{
   .column {
     flex: 50%;
     max-width: 50%;
+  }
+  .divider{
+    width:5%;
+    height:auto;
+    display:inline-block;
   }
 }
 
@@ -292,7 +325,7 @@ footer{
     font-size: 4VW;
   }  
 
-  input, select, textarea, label {
+  input, select, textarea, label, button {
     font-size: 3vw;  
   }
   .col-25, .col-75, input[type=submit] {
@@ -305,5 +338,10 @@ footer{
   }
   footer{
     font-size: 2vw;
+  }
+  .divider{
+    width:auto;
+    height:auto;
+    display: inline-block;
   }
 }

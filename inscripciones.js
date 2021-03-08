@@ -1,39 +1,53 @@
 /*Esta funcion agrega a la tabla de inscritos los valores del formulario y esconde el mensaje*/
 function inscripciones(){
-    document.getElementById("mensaje").hidden = true;
-    
-
-    var tabla = document.getElementById("tabla");
-    tabla.style.visibility = "visible";
 
     username = document.getElementById("user").value;
     edad = document.getElementById("edad").value;
-    cat = document.getElementById("categoria").value;
+    cat = document.getElementById("categoria").value;    
+
+    if(formulariocompleto()){
+        document.getElementById("mensaje").hidden = true;
     
-    var fila = tabla.insertRow(1);
+
+        var tabla = document.getElementById("tabla");
+        tabla.style.visibility = "visible";
         
-    var cell1 = fila.insertCell(0);
-    var cell2 = fila.insertCell(1);
-    var cell3 = fila.insertCell(2);
+        var fila = tabla.insertRow(1);
         
-    cell1.innerHTML = username;
-    cell2.innerHTML = edad; 
-    cell3.innerHTML = cat;           
+        var cell1 = fila.insertCell(0);
+        var cell2 = fila.insertCell(1);
+        var cell3 = fila.insertCell(2);
+            
+        cell1.innerHTML = username;
+        cell2.innerHTML = edad; 
+        cell3.innerHTML = cat;
+
+    }        
 }
 
 /*Esta funcion borra todas las filas creadas y muestra el mensaje */
-function borrar(){
-    document.getElementById("mensaje").hidden = false;
+function borrar(){    
+    
+    /*Borra las filas agregadas*/
+    var i=1;
+    while ( i<tabla.rows.length){
+        tabla.deleteRow(i);
+        i++;
+    }
+    
     tabla.style.visibility = "hidden";
+    document.getElementById("mensaje").hidden = false;
 }
 
-/*Reinicio del formulario */
+/*Reinicio del formulario, el metodo reset aplicaba una actualziacion*/
 function reinciar(){
-    document.getElementById("form").reset(); 
+    document.getElementById("user").value = '';
+    document.getElementById("edad").value = '';
+    document.getElementById("categoria").value = '';     
 }
 
 function formulariocompleto() {
-    if (username != '' && age != '' && order != '') {
+    if (username != '' && edad != '' && cat != '') {
         return true;
     }
 }
