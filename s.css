@@ -1,4 +1,7 @@
+/*Importo un paquete de fuentes de google que me gusta*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/*Defino los colores de mi paleta en variables https://coolors.co/c9dcf5-0b3d7d-7599c7-a2a9b3-bac2cc*/
 :root{
   --negro: #0A1717;
   --gris: #444444;
@@ -164,6 +167,11 @@ button:hover{
   background-color: var(--azul);
 }
 
+.buttons{
+  margin: auto;
+  display: inline;
+}
+
 .col-25 {
   float: left;
   width: 25%;
@@ -189,7 +197,7 @@ button:hover{
   margin-top: 6px;
 }
 
-/* "Clear floats after the columns", esta sacado de la w3 school, basicamente elimina el espacio quie queda libre en cada fila */
+/* "Clear floats after the columns", esta sacado de la w3 school, basicamente elimina el espacio que queda libre en cada fila */
 .row:after {
   content: "";
   display: table;
@@ -203,10 +211,6 @@ button:hover{
   padding:15px;
   margin-top:7px;
   text-align:left;
-}
-
-table{
-  width: 100%;
 }
 
 footer{
@@ -228,21 +232,20 @@ footer{
   flex-wrap: wrap;
   padding: 0 4px;
 }
-
-/* Create four equal columns that sits next to each other */
 .column {
   flex: 25%;
   max-width: 25%;
   padding: 0 4px;
 }
-
 .column img {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
 }
 
+/*Css de la tabla de inscritos*/
 table{
+  width: 100%;
   font-size: 1.5vw;
 }
 
@@ -263,13 +266,10 @@ th {
   color: white;
 }
 
-.buttons{
-  margin: auto;
-  display: inline;
-}
 
-
-/*Este apartado aporta el responsive, cambia determinadas caracteristicas del css dependiendo del tamaño de la pantalla*/
+/*Este apartado aporta el responsive, cambia determinadas 
+caracteristicas del css dependiendo del tamaño de la pantalla,
+practicamente lo unico que se toca son los width y el tamano de la fuente*/
 @media only screen and (max-width:800px) {/*Tablet*/
   .cabecera {
     color: #ececec;
@@ -291,6 +291,21 @@ th {
     height:auto;
     display:inline-block;
   }
+  h1{
+    font-size: 7vw;
+  }
+  h2{
+    font-size: 4vw;
+  }
+  p{
+    font-size: 3vw;
+  }
+  li a{
+    font-size: 3VW;
+  }  
+  input, select, textarea, label, button {
+    font-size: 1.5vw;  
+  }
 }
 
 @media only screen and (max-width:640px) {/*Movil*/
@@ -302,7 +317,7 @@ th {
     background-position: center bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: auto;
     background-blend-mode: lighten;   
   }
   .formulario{
@@ -318,7 +333,7 @@ th {
   h2{
     font-size: 6vw;
   }
-  p{
+  p, tr{
     font-size: 4vw;
   }
   li a{
@@ -343,5 +358,8 @@ th {
     width:auto;
     height:auto;
     display: inline-block;
+  }
+  table{
+    display: table;
   }
 }

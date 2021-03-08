@@ -34,7 +34,7 @@ function borrar(){
         tabla.deleteRow(i);
         i++;
     }
-    
+
     tabla.style.visibility = "hidden";
     document.getElementById("mensaje").hidden = false;
 }
@@ -46,8 +46,9 @@ function reinciar(){
     document.getElementById("categoria").value = '';     
 }
 
+/*Validacion muy basica */
 function formulariocompleto() {
-    if (username != '' && edad != '' && cat != '') {
+    if (username != '' && cat != '' && edad != '' ) {
         return true;
     }
 }
