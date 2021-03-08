@@ -316,8 +316,8 @@ practicamente lo unico que se toca son los width y el tamano de la fuente*/
     color: #ececec;
     padding:15px;
     text-align:center;
-    height: fit-content;
     background-image:  linear-gradient(to right,blue 0%,red 100%), url("https://worldarchery.sport/sites/default/files/news/images/main/d19_5775-x4.jpg");
+    background-position: 60% 70%;
     background-position-x: center;
     background-position-y: bottom 10px;
     background-repeat: no-repeat;
