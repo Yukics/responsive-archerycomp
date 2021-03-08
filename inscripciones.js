@@ -33,7 +33,7 @@ function borrar(){
         table.deleteRow(i);
     }
 
-    /*table.style.visibility = "hidden";*/
+    table.style.visibility = "hidden";
     document.getElementById("mensaje").hidden = false;
 }
 
