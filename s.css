@@ -282,7 +282,7 @@ practicamente lo unico que se toca son los width y el tamano de la fuente*/
     background-position: center bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100%;  
+    background-size: cover;  
     background-blend-mode: lighten;
   }
   .column {
@@ -316,11 +316,13 @@ practicamente lo unico que se toca son los width y el tamano de la fuente*/
     color: #ececec;
     padding:15px;
     text-align:center;
+    height: fit-content;
     background-image:  linear-gradient(to right,blue 0%,red 100%), url("https://worldarchery.sport/sites/default/files/news/images/main/d19_5775-x4.jpg");
-    background-position: center bottom;
+    background-position-x: center;
+    background-position-y: bottom 10px;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100%;
+    background-size: cover;
     background-blend-mode: lighten;   
   }
   .formulario{
