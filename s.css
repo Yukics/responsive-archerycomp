@@ -1,6 +1,8 @@
 /*Importo un paquete de fuentes de google que me gusta*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+/*Tutorial de flexboxing interesante https://css-tricks.com/snippets/css/a-guide-to-flexbox/*/
+
 /*Defino los colores de mi paleta en variables https://coolors.co/c9dcf5-0b3d7d-7599c7-a2a9b3-bac2cc*/
 :root{
   --negro: #0A1717;
