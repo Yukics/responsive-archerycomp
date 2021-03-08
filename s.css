@@ -24,7 +24,6 @@ h1{
    
 }
 
-
 h2{
   font-size: 2vw;
 }
@@ -137,23 +136,49 @@ label {
   font-size: 1.5vw;
 }
 
-input[type=submit] {
+input[type=button] {
   background-color: var(--azulc);
   color: white;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  float: right;
 }
 
-input[type=submit]:hover {
+input[type=button]:hover {
+  background-color: var(--azul);
+}
+
+button{
+  background-color: var(--azulc);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.5vw;
+}
+
+button:hover{
   background-color: var(--azul);
 }
 
 .col-25 {
   float: left;
   width: 25%;
+  margin-top: 6px;
+}
+
+.col-33 {
+  float: left;
+  width: 33%;
+  margin-top: 6px;
+  align-items: flex-end;
+}
+
+.col-332 {
+  float: right;
+  width: 30%;
   margin-top: 6px;
 }
 
@@ -177,6 +202,10 @@ input[type=submit]:hover {
   padding:15px;
   margin-top:7px;
   text-align:left;
+}
+
+table{
+  width: 100%;
 }
 
 footer{
@@ -260,7 +289,7 @@ footer{
     font-size: 4vw;
   }
   li a{
-    font-size: 6VW;
+    font-size: 4VW;
   }  
 
   input, select, textarea, label {
