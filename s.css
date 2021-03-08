@@ -170,6 +170,7 @@ button:hover{
 .buttons{
   margin: auto;
   display: inline;
+  flex-wrap: wrap;
 }
 
 .col-25 {
@@ -279,7 +280,7 @@ practicamente lo unico que se toca son los width y el tamano de la fuente*/
     background-position: center bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;  
+    background-size: auto;  
     background-blend-mode: lighten;
   }
   .column {
