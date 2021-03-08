@@ -27,20 +27,18 @@ function inscripciones(){
 
 /*Esta funcion borra todas las filas creadas y muestra el mensaje */
 function borrar(){    
-    
-    /*Borra las filas agregadas*/
-    var i=1;
-    while ( i<tabla.rows.length){
-        tabla.deleteRow(i);
-        i++;
+    var table = document.getElementById("tabla");
+    /*Borra las filas agregadas*/  
+    for(i=table.rows.length-1;i>=1;i--){
+        table.deleteRow(i);
     }
 
-    tabla.style.visibility = "hidden";
+    /*table.style.visibility = "hidden";*/
     document.getElementById("mensaje").hidden = false;
 }
 
 /*Reinicio del formulario, el metodo reset aplicaba una actualziacion*/
-function reinciar(){
+function reiniciar(){
     document.getElementById("user").value = '';
     document.getElementById("edad").value = '';
     document.getElementById("categoria").value = '';     

@@ -363,6 +363,7 @@ practicamente lo unico que se toca son los width y el tamano de la fuente*/
     display: inline-block;
   }
   table{
-    display: table;
+    table-layout: auto;
+    width: 100%;
   }
 }
